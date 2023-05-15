@@ -19,11 +19,11 @@ function drawPurpleRect() {
   ctx.fillStyle = 'purple';
   ctx.fillRect(50, 50, 200, 100);
 }
-Desenho de um Círculo Rosa
-A função drawPinkCircle() desenha um círculo rosa no canvas. O círculo é desenhado utilizando a função arc() do contexto 2D. O círculo possui um centro em (250, 250), um raio de 50 pixels e é preenchido com a cor rosa.
+Desenho de um Círculo Marrom
+A função drawBrownCircle() desenha um círculo marrom no canvas. O círculo é desenhado utilizando a função arc() do contexto 2D. O círculo possui um centro em (250, 250), um raio de 50 pixels e é preenchido com a cor marrom.
 
 function drawPinkCircle() {
-  ctx.fillStyle = 'pink';
+  ctx.fillStyle = 'brown';
   ctx.beginPath();
   ctx.arc(250, 250, 50, 0, 2 * Math.PI);
   ctx.fill();
@@ -86,7 +86,7 @@ Chamada das Funções de Desenho
 Após a definição das funções de desenho, o código chama as funções na seguinte ordem:
   
 drawPurpleRect();
-drawPinkCircle();
+drawBrownCircle();
 drawColoredLines();
 drawImage();
 drawYellowLine();
