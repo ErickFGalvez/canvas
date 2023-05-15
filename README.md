@@ -1,6 +1,7 @@
 # canvas
 Código de Desenho em Canvas
 Este é um código JavaScript que utiliza a tag <canvas> do HTML para desenhar várias formas e imagens em um elemento de desenho no navegador.
+  
 
 Configuração do Canvas
 O código começa configurando o elemento <canvas> com uma largura de 500 pixels e uma altura de 500 pixels.
@@ -12,6 +13,7 @@ const ctx = canvas.getContext('2d');
 ctx.fillStyle = 'white';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
   
+  
 Desenho de um Retângulo Roxo
 A função drawPurpleRect() é responsável por desenhar um retângulo roxo no canvas. O retângulo tem uma posição inicial de (50, 50) e dimensões de 200 pixels de largura por 100 pixels de altura.
 
@@ -19,6 +21,8 @@ function drawPurpleRect() {
   ctx.fillStyle = 'purple';
   ctx.fillRect(50, 50, 200, 100);
 }
+  
+  
 Desenho de um Círculo Marrom
 A função drawBrownCircle() desenha um círculo marrom no canvas. O círculo é desenhado utilizando a função arc() do contexto 2D. O círculo possui um centro em (250, 250), um raio de 50 pixels e é preenchido com a cor marrom.
 
@@ -28,6 +32,8 @@ function drawPinkCircle() {
   ctx.arc(250, 250, 50, 0, 2 * Math.PI);
   ctx.fill();
 }
+  
+  
 Desenho de Linhas Coloridas
 A função drawColoredLines() desenha três linhas coloridas no canvas. Cada linha é desenhada utilizando os métodos do contexto 2D.
 
@@ -60,6 +66,7 @@ A terceira linha é azul e reta. Ela começa em (400, 300), vai até (450, 350) 
   ctx.lineTo(450, 350);
   ctx.lineTo(400);
   
+  
 colocar a imagem
 Esta função desenha uma imagem no canvas. A imagem é carregada a partir de um arquivo chamado "imagem.png" localizado na pasta "img". A imagem é desenhada nas coordenadas (100, 300) do canvas, com uma largura de 200 pixels e uma altura de 100 pixels.
  
@@ -71,6 +78,7 @@ Esta função desenha uma imagem no canvas. A imagem é carregada a partir de um
         };
       }
 
+  
 desenha uma linha amarela
 Esta função desenha uma linha reta amarela no canvas. A linha começa em (50, 120) e termina em (350, 120). A cor da linha é amarela e sua espessura é de 5 pixels.
    function drawYellowLine() {
@@ -81,6 +89,7 @@ Esta função desenha uma linha reta amarela no canvas. A linha começa em (50, 
         ctx.lineTo(350, 120);
         ctx.stroke();
       }
+  
 
 Chamada das Funções de Desenho
 Após a definição das funções de desenho, o código chama as funções na seguinte ordem:
